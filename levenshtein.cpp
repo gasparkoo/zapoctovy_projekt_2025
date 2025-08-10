@@ -33,14 +33,6 @@ int CountingDistance::chybovost(const std::string& napis_slovo ,const std::strin
             matica[i][j] = hodnota;
         }
     }
-    /*
-    for (int i = 0;i < dlzka_napis+1;i++) {
-        for (int j = 0;j < dlzka_spravne;j++) {
-            std::cerr << matica[i][j]<< " ";
-        }
-        std::cerr << std::endl;
-    }
-        */
 
     return matica[dlzka_napis][dlzka_spravne];
 }
@@ -65,43 +57,3 @@ CountingDistance::CountingDistance(string subor){
     }
 
 }
-
-// int main(){
-
-
-//     string word_1, word_2;
-//     int dlzka_1,dlzka_2;
-//     int stlpec,riadok,rozdiel;
-
-//     cout << "Zadaj slova";
-//     cin >> word_1;
-//     cout << "Zadaj druhe";
-//     cin >> word_2;
-//     // cout << word_1 << " "<< word_2 << endl;
-//     stlpec = dlzka_1 = word_1.length();
-//     riadok = dlzka_2 = word_2.length();
-//     int matica[riadok+1][stlpec+1];
-//     for(int i=0;i<riadok+1;i++){
-//         matica[i][0]=i;
-//     }
-//     for(int i=0;i<stlpec+1;i++){
-//         matica[0][i]=i;
-//     }
-//     for (int i=1;i<riadok+1;i++){
-//         for(int j=1;j<stlpec+1;j++){
-//             if(word_1[j-1] == word_2[i-1]){
-//                 matica[i][j] = min(matica[i-1][j-1],min(matica[i-1][j]+1,matica[i][j-1]+1));
-//             }
-//             else{
-//             matica[i][j] = min(matica[i-1][j-1]+2,min(matica[i-1][j]+1,matica[i][j-1]+1)); //tu sa meni cena vykonanych akcii
-//             }
-//         }
-//     }
-//     for (int i=0; i<riadok+1;i++) {
-//         for (int j=0;j<stlpec+1;j++) {
-//             cout << matica[i][j] << " ";
-//         }
-//         cout << endl;
-//     }
-//     rozdiel = matica[riadok][stlpec];
-// }
