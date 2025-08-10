@@ -18,4 +18,5 @@ class GeneratorTextu {
     public:
     GeneratorTextu(int par, std::string& text);
     std::string generuj(int dlzka);
+    static GeneratorTextu zo_suboru(std::string nazov_suboru);
 };

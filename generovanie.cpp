@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <unordered_map>
+#include <fstream>
 #include "generovanie.h"
 using namespace std;
 
@@ -37,4 +38,13 @@ string GeneratorTextu::generuj(int dlzka) {
             
     }
     return gen_text;
+}
+
+GeneratorTextu GeneratorTextu::zo_suboru(string nazov_suboru){
+    ifstream fin(nazov_suboru);
+    string word,text;
+    while (fin >> word){
+        text+=word+" ";
+    }
+    return GeneratorTextu(4,text);                  //parameter
 }
