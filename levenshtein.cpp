@@ -9,7 +9,7 @@ const int NEKONECNO = 1<<30;
 int CountingDistance::chybovost(const std::string& napis_slovo ,const std::string& spravne_slovo){
     int dlzka_napis = napis_slovo.size();
     int dlzka_spravne = spravne_slovo.size();
-    int matica[dlzka_napis+1][dlzka_napis+1];
+    int matica[dlzka_napis+1][dlzka_spravne+1];
 
     for (int i = 0;i < dlzka_napis+1;i++) {
         for (int j = 0;j < dlzka_spravne+1;j++) {
