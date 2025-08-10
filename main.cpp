@@ -7,18 +7,12 @@
 
 int main() {
     srand(time(NULL));
-    
+
     std::ifstream fin("text.txt");
     std::string text;
     std::string word;
 
-    std::vector<Operacia*> operacie {
-      new Transposition(1),
-      new Deletion(3),
-      new Insertion(3),  
-    };
-
-    CountingDistance distance{operacie};
+    CountingDistance distance("konfiguracia.txt");
 
     std::string slovo1, slovo2;
     std::cin >> slovo1 >> slovo2;

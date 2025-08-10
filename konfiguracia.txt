@@ -1,0 +1,4 @@
+mazanie 3
+transpozicia 2
+substitucia 3
+pridavanie 3

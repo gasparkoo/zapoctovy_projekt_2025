@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <fstream>
 #include "levenshtein.h"
 using namespace std;
 
@@ -44,6 +45,26 @@ int CountingDistance::chybovost(const std::string& napis_slovo ,const std::strin
     return matica[dlzka_napis][dlzka_spravne];
 }
 
+CountingDistance::CountingDistance(string subor){
+    ifstream fil(subor);
+    std::string nova_operacia;
+    int nova_cena;
+    while (fil >> nova_operacia >> nova_cena){
+        if(nova_operacia == "mazanie"){
+            operacie.push_back(new Deletion(nova_cena));
+        }
+        if(nova_operacia == "pridavanie"){
+            operacie.push_back(new Insertion(nova_cena));
+        }
+        if(nova_operacia == "transpozicia"){
+            operacie.push_back(new Transposition(nova_cena));
+        }
+        if(nova_operacia == "substitucia"){
+            operacie.push_back(new Substitution(nova_cena));
+        }
+    }
+
+}
 
 // int main(){
 
