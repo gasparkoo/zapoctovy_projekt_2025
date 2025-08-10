@@ -10,7 +10,7 @@ g++ .\main.cpp .\leveshtein.cpp .\generovanie.cpp .\editacna_vzdialenost.cpp -o 
 Po spustený programu `.\main.exe` sa spýta, aký dlhý má vygenerovať text a následne sa mu spustí časovač. Po prepísaní textu a stlačeník klávesy ENTER sa časovač vypne a vypíše sa čas, chybovosť a WPM (počet slov za minútu).
 
 ## Konfigurácia
-V súbore "text.txt" sú uložené texty, z ktorých program vygeneruje vzorku na precvičenie rýchlopisu. 
+V súbore `text.txt` sú uložené texty, z ktorých program vygeneruje vzorku na precvičenie rýchlopisu. 
 
 V súbore `konfiguracia.txt` sa nachádza zoznam povolených operácii pri zistovaní chybovosti textu a ich konkrétna cena. Operácie sú:
 - mazanie - vymazanie jedného písmenka z prepísaného textu,
