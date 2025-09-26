@@ -48,10 +48,11 @@ Základ algoritmu je Levenshteinov algoritmus na počítanie editačnej vzdialen
 ##### Popis algoritmus
 Majme vzorové slovo $v$ a napísané slovo $n$. Chcem si vyplniť tabuľku veľkosti $|n|+1 × |v|+1. Bunka $i, j$ v tabuľke hovorí o chybovosti pre prvých $i$ a $j$ znakov napísaného a vzorového slova. Algoritmus je založený na dynamickom programovaní. Keď chcem zistiť hodnotu políčka $i,j$, zoberiem si minimum z nasledujúcich operácií:
 
-mazanie - pozriem sa na hodnotu o 1 vyššie a pripočítam cenu mazania.
-transpozicia - pozriem sa, či transpozíciou posledných dvoch písmen dostanem posledné dve písmená prvých $j$ znakov vzorového slova. Ak áno, pozriem sa diagonálne o 2. Ak nie, pozriem sa diagonálne o 1. Následne pripočítam cenu transpozície. 
-substitucia - pozriem sa na hodnotu o 1 diagonálne a pripočítam cenu substitúcie.
-pridavanie - pozriem sa na hodnotu o 1 doľava a pripočítam cenu pridavania.
+- mazanie - pozriem sa na hodnotu o 1 vyššie a pripočítam cenu mazania.
+- transpozicia - pozriem sa, či transpozíciou posledných dvoch písmen dostanem posledné dve písmená prvých $j$ znakov vzorového slova.   
+  Ak áno, pozriem sa diagonálne o 2. Ak nie, pozriem sa diagonálne o 1. Následne pripočítam cenu transpozície. 
+- substitucia - pozriem sa na hodnotu o 1 diagonálne a pripočítam cenu substitúcie.
+- pridavanie - pozriem sa na hodnotu o 1 doľava a pripočítam cenu pridavania.
 
 
 
