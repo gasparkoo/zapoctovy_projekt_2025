@@ -22,7 +22,7 @@ WPM: 20
 ```
 
 ### Konfigurácia
-V súbore "text.txt" sú uložené texty, z ktorých program vygeneruje vzorku na precvičenie rýchlopisu. Viacero neviditeľných znakov (medzera, odsek, tabulátor,...) za sebou sa ignoruje. Preto text môže obsahovať aj odseky. Odporúčané je zadávať anglický text.
+V súbore `text.txt` sú uložené texty, z ktorých program vygeneruje vzorku na precvičenie rýchlopisu. Viacero neviditeľných znakov (medzera, odsek, tabulátor,...) za sebou sa ignoruje. Preto text môže obsahovať aj odseky. Odporúčané je zadávať anglický text.
 
 V súbore `konfiguracia.txt` sa nachádza zoznam povolených operácii pri zistovaní chybovosti textu a ich konkrétna cena. Operácie sú:
 - mazanie - vymazanie jedného písmenka z prepísaného textu,
